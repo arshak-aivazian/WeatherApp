@@ -1,10 +1,12 @@
 package com.example.weatherapp.entity
 
-import java.io.Serializable
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class WeatherEntity(
     val cityName: String,
     val temp: Double,
     val pressure: Double,
     val windSpeed: Double
-) : Serializable
+) : Parcelable
