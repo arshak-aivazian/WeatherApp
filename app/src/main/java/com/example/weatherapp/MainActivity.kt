@@ -1,11 +1,8 @@
 package com.example.weatherapp
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.weatherapp.entity.WeatherEntity
-import com.example.weatherapp.ui.CityListFragment
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.weatherapp.feature.search.ui.SearchWeatherFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val fragmentManager = supportFragmentManager
 
         fragmentManager.beginTransaction()
-            .add(R.id.container, CityListFragment.newInstance())
+            .add(R.id.container, SearchWeatherFragment.newInstance())
             .commit()
     }
 }
