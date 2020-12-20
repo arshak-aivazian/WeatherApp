@@ -2,7 +2,7 @@ package com.example.weatherapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.weatherapp.feature.search.ui.SearchWeatherFragment
+import com.example.weatherapp.feature.top.ui.TopCitiesFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val fragmentManager = supportFragmentManager
 
         fragmentManager.beginTransaction()
-            .add(R.id.container, SearchWeatherFragment.newInstance())
+            .add(R.id.container, TopCitiesFragment.newInstance())
             .commit()
     }
 }
