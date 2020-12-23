@@ -28,7 +28,7 @@ class CityWeatherFragment : Fragment(R.layout.fragment_city_weather) {
         arguments?.let {
             val weather = it.getParcelable<WeatherEntity>(WEATHER)
 
-            tvCityName.text = "Город: ${weather?.cityName}"
+            tvCity.text = "Город: ${weather?.cityName}"
             tvTemp.text = "Температура: ${weather?.temp}°C"
         }
 

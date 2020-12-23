@@ -26,7 +26,7 @@ class SearchWeatherFragment : MvpAppCompatFragment(R.layout.fragment_search_weat
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btnSearch.setOnClickListener {
+        btnOpenAddCityScreen.setOnClickListener {
             presenter.onWeatherDetailClick(
                 etCityName.text.toString(),
                 etCountryName.text.toString(),
